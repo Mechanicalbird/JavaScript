@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>6. conditinal Logic in JavaScript</title>
+  <script type="text/javascript">  
+
+var someValue = 24;
+var otherValue =23;
+/*
+if (someValue > 30) {
+  alert("firts case");
+}
+else if (someValue === 30){
+  alert("second case")
+}
+else if (someValue === 25){
+  alert ("thired case");
+}
+else {
+  alert ("forth case");
+}
+*/
+/*
+if (someValue > 20 && otherValue >20) {
+  alert ("ohh my god");
+}
+
+
+if (someValue === 24 || otherValue === 24) {
+  alert ("sixth case");
+}
+*/
+
+/*
+var myResult = "";
+myResult = (someValue === 24) ? "equal" : "not equal";
+alert(myResult);
+*/
+
+/*
+var userName = "Rimmer";
+switch (userName)
+{
+   case "Lister":
+      document.write("Care for a good curry");
+      break;
+   case "Rimmer":
+      document.write("Welcome back, smeg head");
+      break;
+   default:
+      document.write("ARe you n emothinal!");  
+      break;
+}
+*/
+
+var rightNow = new Date();
+var currentHour = rightNow.getHours();
+switch(true)
+{
+  case (currentHour > 8 && currentHour < 12) :
+     document.write("Morning, Sunshine!");
+     break;
+  case (currentHour === 12):
+     document.write("Lunch time!");
+     break;
+  case (currentHour > 12 && currentHour <18 ):
+     document.write("Fight the urge to siesta!");
+     break;
+  default:
+     document.write(rightNow);
+     break;
+}
+
+
+
+  </script>
+</head>
+<body>
+  <h1 id="title">JavaScript Example</h1>
+</body>
+</html>
